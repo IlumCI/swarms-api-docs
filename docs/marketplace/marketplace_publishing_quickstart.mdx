@@ -169,7 +169,6 @@ print(result)
 | Field | Type | Description |
 |-------|------|-------------|
 | `publish_to_marketplace` | `bool` | Set to `True` to enable publishing |
-| `use_cases` | `List[Dict]` | List of use case dictionaries with `title` and `description` |
 
 ### Use Case Format
 
@@ -235,7 +234,6 @@ print(response)
     - **System Prompt Quality**: Ensure your system prompt is well-crafted
 
 !!! warning "Important Notes"
-    - `use_cases` is **required** when `publish_to_marketplace=True`
     - Both `tags` and `capabilities` should be provided for discoverability
     - The agent must have a valid `SWARMS_API_KEY` set in the environment
 
